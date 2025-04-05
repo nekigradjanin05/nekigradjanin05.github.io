@@ -5,32 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan za Lokalni Referendum</title>
     <style>
-        /* Optional: Basic styling for links */
+        /* Enhanced Styling */
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Specific sans-serif stack */
+            line-height: 1.6;
+            color: #333; /* Dark grey text for readability */
+            background-color: #f9f9f9; /* Slightly off-white background */
+            max-width: 850px; /* Limit width for better line length */
+            margin: 2em auto; /* Center content block with top/bottom margin */
+            padding: 1em 2em; /* Padding inside the content block */
+            border: 1px solid #ddd; /* Subtle border around content */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #1a1a1a; /* Darker heading color */
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.3em;
+            margin-top: 0; /* Remove default top margin */
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.2em;
+            margin-top: 2.5em; /* Increased top margin for phase separation */
+            margin-bottom: 1em;
+        }
+
+        p {
+            margin-bottom: 1em; /* Consistent paragraph spacing */
+        }
+
+        /* Link Styling - keeping the help cursor and dotted underline */
         a {
+            color: #0056b3; /* Standard accessible blue */
             text-decoration: none; /* Removes underline */
-            color: blue; /* Or your preferred link color */
             cursor: help; /* Changes cursor to indicate help/info */
-            border-bottom: 1px dotted blue; /* Optional dotted underline */
+            border-bottom: 1px dotted #0056b3; /* Dotted underline */
+            padding-bottom: 1px; /* Ensure underline doesn't touch text too closely */
+            transition: color 0.2s, border-bottom-color 0.2s; /* Smooth transition */
         }
         a:hover {
-            color: darkblue; /* Color on hover */
-            border-bottom: 1px solid darkblue; /* Solid underline on hover */
+            color: #003d80; /* Darker blue on hover */
+            border-bottom: 1px solid #003d80; /* Solid underline on hover */
         }
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-        }
-        h2, h3 {
-            margin-top: 1.5em;
-        }
-        ul {
-            margin-left: 20px;
+
+        /* List Styling */
+        ul, ol {
+            margin-left: 2em; /* Indentation */
+            margin-bottom: 1em; /* Space after list */
+            padding-left: 1em; /* Padding for list markers */
         }
         li {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.6em; /* Space between list items */
         }
+        /* Nested List Styling */
+        ul ul, ol ol, ul ol, ol ul {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: 1.5em; /* Further indent nested lists */
+        }
+
         strong {
              font-weight: bold;
+             color: #111; /* Slightly darker bold text */
+        }
+
+        /* Style the technical note paragraph slightly differently */
+        body > p:nth-of-type(1) { /* Targets the first paragraph child of body */
+            font-size: 0.9em;
+            color: #555;
+            background-color: #f0f0f0;
+            padding: 10px 15px;
+            border-left: 3px solid #ccc;
+            margin-bottom: 1.5em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                margin: 1em auto;
+                padding: 0.5em 1em;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            ul, ol {
+                margin-left: 1em;
+                padding-left: 1em;
+            }
         }
     </style>
 </head>
